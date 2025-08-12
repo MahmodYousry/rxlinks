@@ -1,0 +1,21 @@
+<div class="content white-content py-5">
+  <app-search (searchValue)="onSearchValueChange($event)"></app-search>
+
+  @for (char of categories; track $index) {
+  <div class="container mb-4">
+    <h3 class="category-header">{{ char }}</h3>
+    <div
+      class="d-flex justify-content-start align-items-center flex-wrap gap-3"
+    >
+      @for (link of links(); track $index) { @if (link.category === char) {
+      <app-link
+        [title]="link.title"
+        [url]="link.url"
+        [icon]="link.img"
+        target="_blank"
+      ></app-link>
+      } }
+    </div>
+  </div>
+  }
+</div>

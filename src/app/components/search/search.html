@@ -1,0 +1,16 @@
+<div class="container white-content pb-5">
+  <p-iconfield>
+    @if (searchKey()) {
+    <p-inputicon class="pi pi-spinner pi-spin" />
+    } @else {
+    <p-inputicon class="pi pi-search" />
+    }
+    <input
+      #searthInput
+      type="text"
+      pInputText
+      placeholder="Search"
+      (input)="onSeachChange($event)"
+    />
+  </p-iconfield>
+</div>
