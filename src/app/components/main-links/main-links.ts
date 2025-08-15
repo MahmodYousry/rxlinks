@@ -21,6 +21,7 @@ export class MainLinks {
     { title: 'Manus', url: 'https://manus.im/', img: 'imgs/app-icons/manus.png', category: 'AI' },
     { title: 'Gemini', url: 'https://gemini.google.com/', img: 'imgs/app-icons/google-gemini.webp', category: 'AI' },
     { title: 'Cobalt', url: 'https://cobalt.tools/', img: 'imgs/app-icons/smile.png', category: 'AI' },
+    { title: 'Z Ai', url: 'https://z.ai/', img: 'imgs/app-icons/z.ai.webp', category: 'AI' },
 
     // Popular
     { title: 'Search', url: 'https://google.com/', img: 'imgs/app-icons/google.png', category: 'Popular' },
