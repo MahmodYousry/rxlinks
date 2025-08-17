@@ -32,7 +32,7 @@ export class MainLinks {
     { title: 'Hotmail', url: 'https://outlook.live.com/mail/0/', img: 'imgs/app-icons/MOutlook.png', category: 'Popular' },
     { title: 'Yahoo Mail', url: 'https://mail.yahoo.com/', img: 'imgs/app-icons/yahoo-mail-icon-32189.png', category: 'Popular' },
     { title: 'Youtube', url: 'http://www.youtube.com/', img: 'imgs/app-icons/yt-logo.png', category: 'Popular' },
-    { title: 'Y2mate', url: 'https://y2mate.com/', img: 'imgs/app-icons/y2mate.png', category: 'Popular' },
+    { title: 'Y2mate', url: 'https://v4.www-y2mate.com/', img: 'imgs/app-icons/y2mate.png', category: 'Popular' },
 
     // Social
     { title: 'Linkedin', url: 'https://linkedin.com', img: 'imgs/app-icons/LinkedIn_logo_initials.png', category: 'Social' },
