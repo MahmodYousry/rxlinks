@@ -22,7 +22,7 @@ export class MainLinks {
     { title: 'Gemini', url: 'https://gemini.google.com/', img: 'imgs/app-icons/google-gemini.webp', category: 'AI' },
     { title: 'Cobalt', url: 'https://cobalt.tools/', img: 'imgs/app-icons/smile.png', category: 'AI' },
     { title: 'Z Ai', url: 'https://z.ai/', img: 'imgs/app-icons/z.ai.webp', category: 'AI' },
-    { title: 'Cobalt', url: 'https://www.blackbox.ai/', img: 'imgs/app-icons/blackbox-icon.png', category: 'AI' },
+    { title: 'Blackbox', url: 'https://www.blackbox.ai/', img: 'imgs/app-icons/blackbox-icon.png', category: 'AI' },
 
     // Popular
     { title: 'Search', url: 'https://google.com/', img: 'imgs/app-icons/google.png', category: 'Popular' },
