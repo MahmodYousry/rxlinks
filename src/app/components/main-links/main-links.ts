@@ -21,6 +21,7 @@ export class MainLinks {
     { title: 'Manus', url: 'https://manus.im/', img: 'imgs/app-icons/manus.png', category: 'AI' },
     { title: 'Gemini', url: 'https://gemini.google.com/', img: 'imgs/app-icons/google-gemini.webp', category: 'AI' },
     { title: 'Cobalt', url: 'https://cobalt.tools/', img: 'imgs/app-icons/smile.png', category: 'AI' },
+    { title: 'Z Ai', url: 'https://z.ai/', img: 'imgs/app-icons/z.ai.webp', category: 'AI' },
     { title: 'Cobalt', url: 'https://www.blackbox.ai/', img: 'imgs/app-icons/blackbox-icon.png', category: 'AI' },
 
     // Popular
@@ -32,7 +33,7 @@ export class MainLinks {
     { title: 'Hotmail', url: 'https://outlook.live.com/mail/0/', img: 'imgs/app-icons/MOutlook.png', category: 'Popular' },
     { title: 'Yahoo Mail', url: 'https://mail.yahoo.com/', img: 'imgs/app-icons/yahoo-mail-icon-32189.png', category: 'Popular' },
     { title: 'Youtube', url: 'http://www.youtube.com/', img: 'imgs/app-icons/yt-logo.png', category: 'Popular' },
-    { title: 'Y2mate', url: 'https://y2mate.com/', img: 'imgs/app-icons/y2mate.png', category: 'Popular' },
+    { title: 'Y2mate', url: 'https://v4.www-y2mate.com/', img: 'imgs/app-icons/y2mate.png', category: 'Popular' },
 
     // Social
     { title: 'Linkedin', url: 'https://linkedin.com', img: 'imgs/app-icons/LinkedIn_logo_initials.png', category: 'Social' },
