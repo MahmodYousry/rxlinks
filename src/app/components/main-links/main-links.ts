@@ -21,6 +21,7 @@ export class MainLinks {
     { title: 'Manus', url: 'https://manus.im/', img: 'imgs/app-icons/manus.png', category: 'AI' },
     { title: 'Gemini', url: 'https://gemini.google.com/', img: 'imgs/app-icons/google-gemini.webp', category: 'AI' },
     { title: 'Cobalt', url: 'https://cobalt.tools/', img: 'imgs/app-icons/smile.png', category: 'AI' },
+    { title: 'Cobalt', url: 'https://www.blackbox.ai/', img: 'imgs/app-icons/blackbox-icon.png', category: 'AI' },
 
     // Popular
     { title: 'Search', url: 'https://google.com/', img: 'imgs/app-icons/google.png', category: 'Popular' },
@@ -56,6 +57,7 @@ export class MainLinks {
     { title: 'kikass', url: 'https://kikass.to', img: 'imgs/app-icons/kikass.png', category: 'Pirate' },
     { title: 'glodls.to', url: 'https://glodls.to', img: 'imgs/app-icons/torrent-galaxy.webp', category: 'Pirate' },
     { title: 'Galaxy', url: 'http://galaxy2gchufcb3z.onion', img: 'imgs/app-icons/torrent-galaxy.webp', category: 'Pirate' },
+    { title: 'Galaxy', url: 'https://mutaz.net/', img: 'imgs/app-icons/mutaz.net_logo_Big.webp', category: 'Pirate' },
 
     // Images & photos
     { title: 'Photopea', url: 'https://www.photopea.com/', img: 'imgs/app-icons/Photopea_logo.svg.png', category: 'Images & Photos' },
@@ -71,6 +73,7 @@ export class MainLinks {
     // Subtitles
     { title: 'subdl', url: 'https://subdl.com/', img: 'imgs/app-icons/subdl_231255.webp', category: 'Subtitles' },
     { title: 'opensubtitles', url: 'https://www.opensubtitles.org/en/search/subs', img: 'imgs/app-icons/OpenSubtitles.org_.png', category: 'Subtitles' },
+    { title: 'subtitlecat', url: 'https://subtitlecat.com/', img: 'imgs/app-icons/subtitlecat.png', category: 'Subtitles' },
 
     // Others
     { title: '1377x', url: 'https://1377x.to/', img: 'imgs/app-icons/1377x.webp', category: 'Others' },
