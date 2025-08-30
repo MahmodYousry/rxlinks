@@ -44,6 +44,7 @@ export class MainLinks {
     // Games
     { title: 'Empire', url: 'https://empire.goodgamestudios.com/', img: 'imgs/app-icons/goodgame empire.webp', category: 'Games' },
     { title: 'Game3rb', url: 'https://game3rb.com/', img: 'imgs/app-icons/game3rb.png', category: 'Games' },
+    { title: 'Chess', url: 'https://chess.com/', img: 'imgs/app-icons/chess_profile.png', category: 'Games' },
 
     // Pirate
     { title: 'Soap2day', url: 'https://ww25.soap2day.day', img: 'imgs/app-icons/soap2day-icon.png', category: 'Pirate' },
@@ -58,7 +59,7 @@ export class MainLinks {
     { title: 'kikass', url: 'https://kikass.to', img: 'imgs/app-icons/kikass.png', category: 'Pirate' },
     { title: 'glodls.to', url: 'https://glodls.to', img: 'imgs/app-icons/torrent-galaxy.webp', category: 'Pirate' },
     { title: 'Galaxy', url: 'http://galaxy2gchufcb3z.onion', img: 'imgs/app-icons/torrent-galaxy.webp', category: 'Pirate' },
-    { title: 'Galaxy', url: 'https://mutaz.net/', img: 'imgs/app-icons/mutaz.net_logo_Big.webp', category: 'Pirate' },
+    { title: 'Mutaz', url: 'https://mutaz.net/', img: 'imgs/app-icons/mutaz.net_logo_Big.webp', category: 'Pirate' },
 
     // Images & photos
     { title: 'Photopea', url: 'https://www.photopea.com/', img: 'imgs/app-icons/Photopea_logo.svg.png', category: 'Images & Photos' },
