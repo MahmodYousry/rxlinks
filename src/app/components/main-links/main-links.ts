@@ -92,6 +92,9 @@ export class MainLinks {
     // Game Engines
     { title: 'Godot', url: 'https://godotengine.org/', img: 'imgs/app-icons/logo_dark.png', category: 'Game Engine' },
 
+    // Sports
+    { title: 'يلا كوره', url: 'https://yallakora.com/', img: 'imgs/app-icons/yallakora_400x400.png', category: 'Sports' },
+
     // Others
     { title: '1377x', url: 'https://1377x.to/', img: 'imgs/app-icons/1377x.webp', category: 'Others' },
     { title: 'pdfdrive', url: 'https://pdfdrive.com/', img: 'imgs/app-icons/pdfdrive.png', category: 'Others' },
