@@ -89,6 +89,9 @@ export class MainLinks {
     { title: 'edX', url: 'https://www.edx.org/', img: 'imgs/app-icons/edx.png', category: 'Learning' },
     { title: 'Udemy', url: 'https://www.udemy.com/', img: 'imgs/app-icons/udemy-logo-png_seeklogo-409219.png', category: 'Learning' },
 
+    // Game Engines
+    { title: 'Godot', url: 'https://godotengine.org/', img: 'imgs/app-icons/logo_dark.png', category: 'Game Engine' },
+
     // Others
     { title: '1377x', url: 'https://1377x.to/', img: 'imgs/app-icons/1377x.webp', category: 'Others' },
     { title: 'pdfdrive', url: 'https://pdfdrive.com/', img: 'imgs/app-icons/pdfdrive.png', category: 'Others' },
