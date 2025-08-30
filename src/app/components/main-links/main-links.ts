@@ -64,6 +64,12 @@ export class MainLinks {
     // Images & photos
     { title: 'Photopea', url: 'https://www.photopea.com/', img: 'imgs/app-icons/Photopea_logo.svg.png', category: 'Images & Photos' },
 
+    // Tools
+    { title: 'Tinywow', url: 'https://tinywow.com/', img: 'imgs/app-icons/tinywow _400x400.jpg', category: 'Tools' },
+    { title: 'Iloveimg', url: 'https://www.iloveimg.com/', img: 'imgs/app-icons/iloveimg-logo-png_seeklogo-619235.png', category: 'Tools' },
+    { title: 'Removebg', url: 'https://www.remove.bg/', img: 'imgs/app-icons/Remove.bg_icon_2019.svg.png', category: 'Tools' },
+    { title: 'Wifi Qrcode', url: 'https://www.qr-code-generator.com/solutions/wifi-qr-code/', img: 'imgs/app-icons/wifi-qr-code-generator.png', category: 'Tools' },
+
     // Web Technologies
     { title: 'Laravel', url: 'https://laravel.com/', img: 'imgs/app-icons/Laravel.svg.png', category: 'Web Technologies' },
     { title: 'Angular', url: 'https://angular.io/', img: 'imgs/app-icons/icone-angulaire-rouge.png', category: 'Web Technologies' },
@@ -76,6 +82,12 @@ export class MainLinks {
     { title: 'subdl', url: 'https://subdl.com/', img: 'imgs/app-icons/subdl_231255.webp', category: 'Subtitles' },
     { title: 'opensubtitles', url: 'https://www.opensubtitles.org/en/search/subs', img: 'imgs/app-icons/OpenSubtitles.org_.png', category: 'Subtitles' },
     { title: 'subtitlecat', url: 'https://subtitlecat.com/', img: 'imgs/app-icons/subtitlecat.png', category: 'Subtitles' },
+
+    // Learning
+    { title: 'Khan Academy', url: 'https://www.khanacademy.org/', img: 'imgs/app-icons/khan-academy-icon.svg', category: 'Learning' },
+    { title: 'Coursera', url: 'https://www.coursera.org/', img: 'imgs/app-icons/free-coursera-logo-icon-svg-png-download-2944808.webp', category: 'Learning' },
+    { title: 'edX', url: 'https://www.edx.org/', img: 'imgs/app-icons/edx.png', category: 'Learning' },
+    { title: 'Udemy', url: 'https://www.udemy.com/', img: 'imgs/app-icons/udemy-logo-png_seeklogo-409219.png', category: 'Learning' },
 
     // Others
     { title: '1377x', url: 'https://1377x.to/', img: 'imgs/app-icons/1377x.webp', category: 'Others' },
