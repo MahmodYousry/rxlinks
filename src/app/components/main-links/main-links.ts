@@ -65,6 +65,8 @@ export class MainLinks {
     { title: 'Photopea', url: 'https://www.photopea.com/', img: 'imgs/app-icons/Photopea_logo.svg.png', category: 'Images & Photos' },
 
     // Tools
+    { title: 'Image Resizer', url: 'https://imageresizer.com/', img: 'imgs/app-icons/image-resizer.png', category: 'Tools' },
+    { title: 'Sketchboard', url: 'https://sketchboard.me/', img: 'imgs/app-icons/sketchboard.me.png', category: 'Tools' },
     { title: 'Tinywow', url: 'https://tinywow.com/', img: 'imgs/app-icons/tinywow _400x400.jpg', category: 'Tools' },
     { title: 'Iloveimg', url: 'https://www.iloveimg.com/', img: 'imgs/app-icons/iloveimg-logo-png_seeklogo-619235.png', category: 'Tools' },
     { title: 'Removebg', url: 'https://www.remove.bg/', img: 'imgs/app-icons/Remove.bg_icon_2019.svg.png', category: 'Tools' },
