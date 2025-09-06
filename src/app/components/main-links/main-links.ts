@@ -34,6 +34,7 @@ export class MainLinks {
     { title: 'Yahoo Mail', url: 'https://mail.yahoo.com/', img: 'imgs/app-icons/yahoo-mail-icon-32189.png', category: 'Popular' },
     { title: 'Youtube', url: 'http://www.youtube.com/', img: 'imgs/app-icons/yt-logo.png', category: 'Popular' },
     { title: 'Y2mate', url: 'https://v4.www-y2mate.com/', img: 'imgs/app-icons/y2mate.png', category: 'Popular' },
+    { title: 'X', url: 'https://x.com/', img: 'imgs/app-icons/x.jpg', category: 'Popular' },
 
     // Social
     { title: 'Linkedin', url: 'https://linkedin.com', img: 'imgs/app-icons/LinkedIn_logo_initials.png', category: 'Social' },
@@ -66,6 +67,7 @@ export class MainLinks {
 
     // Tools
     { title: 'Image Resizer', url: 'https://imageresizer.com/', img: 'imgs/app-icons/image-resizer.png', category: 'Tools' },
+    { title: 'Online Notepad', url: 'https://onlinenotepad.org/notepad', img: 'imgs/app-icons/notepad-icon-7.png', category: 'Tools' },
     { title: 'Sketchboard', url: 'https://sketchboard.me/', img: 'imgs/app-icons/sketchboard.me.png', category: 'Tools' },
     { title: 'Tinywow', url: 'https://tinywow.com/', img: 'imgs/app-icons/tinywow _400x400.jpg', category: 'Tools' },
     { title: 'Iloveimg', url: 'https://www.iloveimg.com/', img: 'imgs/app-icons/iloveimg-logo-png_seeklogo-619235.png', category: 'Tools' },
@@ -90,6 +92,10 @@ export class MainLinks {
     { title: 'Coursera', url: 'https://www.coursera.org/', img: 'imgs/app-icons/free-coursera-logo-icon-svg-png-download-2944808.webp', category: 'Learning' },
     { title: 'edX', url: 'https://www.edx.org/', img: 'imgs/app-icons/edx.png', category: 'Learning' },
     { title: 'Udemy', url: 'https://www.udemy.com/', img: 'imgs/app-icons/udemy-logo-png_seeklogo-409219.png', category: 'Learning' },
+    { title: 'Dev To', url: 'https://dev.to/', img: 'imgs/app-icons/resized_logo_UQww2soKuUsjaOGNB38o.png', category: 'Learning' },
+
+    // Training
+    { title: 'Rxjs Fruits', url: 'https://www.rxjs-fruits.com', img: 'imgs/app-icons/rxjs.png', category: 'Training' },
 
     // Game Engines
     { title: 'Godot', url: 'https://godotengine.org/', img: 'imgs/app-icons/logo_dark.png', category: 'Game Engine' },
