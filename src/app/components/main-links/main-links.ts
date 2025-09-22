@@ -1,15 +1,18 @@
-import { Component, signal } from '@angular/core';
+import { Component, DOCUMENT, effect, Inject, signal } from '@angular/core';
 import { Link } from "../link/link";
-import { ILinks } from '../../models';
+import { ILinks, ThemeMode } from '../../models';
 import { Search } from '../search/search';
-
+import { ToggleButtonModule } from 'primeng/togglebutton';
 @Component({
   selector: 'app-main-links',
-  imports: [Link, Search],
+  imports: [Link, Search, ToggleButtonModule],
   templateUrl: './main-links.html',
   styleUrl: './main-links.scss'
 })
 export class MainLinks {
+
+  currentMode = signal<string>(ThemeMode.LIGHT);
+  checked = signal(false);
 
   originalLinks = signal<ILinks[]>([
     // AI
@@ -53,6 +56,7 @@ export class MainLinks {
     { title: 'fmovies cat', url: ' https://www.fmovies.cat/', img: 'imgs/app-icons/FMovies-Logo.png', category: 'Pirate' },
     { title: 'yarrlist', url: 'https://yarrlist.com/', img: 'imgs/app-icons/manga.png', category: 'Pirate' },
     { title: 'fmhy', url: 'https://fmhy.pages.dev/videopiracyguide', img: 'imgs/app-icons/3d-rendering-neon-triangle_23-2151293977.avif', category: 'Pirate' },
+    { title: 'wotaku', url: 'https://wotaku.wiki/', img: 'imgs/app-icons/wotaku.png', category: 'Pirate' },
     { title: 'z-lib', url: 'https://z-lib.gd', img: 'imgs/app-icons/41b30ae11f6d5cdeee5d790b95d005c5855d661957f058b5fc101f56736afeed_200.webp', category: 'Pirate' },
     { title: 'FTU Apps', url: 'https://ftuapps.dev', img: 'imgs/app-icons/ftuapps.dev.png', category: 'Pirate' },
     { title: 'thepiratebay', url: 'https://thepiratebay.org/', img: 'imgs/app-icons/thepiratebay.png', category: 'Pirate' },
@@ -111,6 +115,8 @@ export class MainLinks {
 
   links = signal<ILinks[]>([]);
 
+  constructor(@Inject(DOCUMENT) private document: Document) { }
+
   ngOnInit() {
     // Initialize links with the original links
     this.links.set(this.originalLinks());
@@ -146,7 +152,19 @@ export class MainLinks {
   }
 
 
+  toggleMode() {
+    this.document.body.classList.toggle(ThemeMode.LIGHT);
+    this.document.body.classList.toggle(ThemeMode.DARK);
+    if (this.currentMode() === ThemeMode.LIGHT) {
+      this.updateCurrentMode(ThemeMode.DARK);
+    } else {
+      this.updateCurrentMode(ThemeMode.LIGHT);
+    }
+  }
 
+  updateCurrentMode(mode: string) {
+    this.currentMode.set(mode);
+  }
 
 
 }

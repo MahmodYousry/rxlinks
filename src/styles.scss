@@ -1,11 +1,76 @@
 /* You can add global styles to this file, and also import other style files */
+$bodyBg_light: #f8f9fa;
+$bgColor_light: white;
+$bgColor_dark: #212529;
+
+$textColor_light: black;
+$textColor_dark: #6c757d;
+
+$borderColor_light: black;
+$borderColor_dark: white;
+
+// mixin that enables css variables in light mode
+@mixin lighten() {
+  background-color: #{$bodyBg_light};
+  color: #{$textColor_light};
+  border-color: #{$borderColor_light};
+}
+
+@mixin lightenCard() {
+  background-color: #{$bgColor_light};
+  color: #{$textColor_light};
+  border-color: #{$borderColor_light};
+}
+
+// mixin that enables css variables in dark mode
+@mixin darken() {
+  background-color: #{$bgColor_dark};
+  color: #{$textColor_dark};
+  border-color: #{$borderColor_dark};
+}
+
+@mixin darkenCard() {
+  background-color: #0003;
+  color: #{$textColor_dark};
+  border-color: #{$borderColor_dark};
+}
+
 body {
   font-family: "Rubik", sans-serif;
-  background-color: #f8f9fa;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
+
+body.dark {
+  @include darken();
+
+  .link-card-circle {
+    @include darkenCard();
+  }
+}
+
+body.light {
+  @include lighten();
+
+  .link-card-circle {
+    @include lightenCard();
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    @include darken();
+
+    .link-card-circle {
+      @include darkenCard();
+    }
+  }
+}
+
+
+
+
 
 .content h3 {
   margin-bottom: 20px;
