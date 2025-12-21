@@ -74,6 +74,7 @@ export class LinksService {
       { title: 'Removebg', url: 'https://www.remove.bg/', img: 'imgs/app-icons/Remove.bg_icon_2019.svg.png', category: 'Tools' },
       { title: 'Virustotal', url: 'https://www.virustotal.com/', img: 'imgs/app-icons/virustotal.png', category: 'Tools' },
       { title: 'Wifi Qrcode', url: 'https://www.qr-code-generator.com/solutions/wifi-qr-code/', img: 'imgs/app-icons/wifi-qr-code-generator.png', category: 'Tools' },
+      { title: 'Rustdesk', url: 'https://rustdesk.com/', img: 'imgs/app-icons/Rustdesk.svg.png', category: 'Tools' },
 
       // Web Technologies
       { title: 'Laravel', url: 'https://laravel.com/', img: 'imgs/app-icons/Laravel.svg.png', category: 'Web Technologies' },
@@ -94,10 +95,18 @@ export class LinksService {
       { title: 'edX', url: 'https://www.edx.org/', img: 'imgs/app-icons/edx.png', category: 'Learning' },
       { title: 'Udemy', url: 'https://www.udemy.com/', img: 'imgs/app-icons/udemy-logo-png_seeklogo-409219.png', category: 'Learning' },
       { title: 'Dev To', url: 'https://dev.to/', img: 'imgs/app-icons/resized_logo_UQww2soKuUsjaOGNB38o.png', category: 'Learning' },
+      { title: 'cssgridgarden', url: 'https://cssgridgarden.com/', img: 'imgs/app-icons/css-grid.png', category: 'Learning' },
+      { title: 'flexboxfroggy', url: 'https://flexboxfroggy.com/', img: 'imgs/app-icons/flexboxfroggy.png', category: 'Learning' },
 
       // Web Tools
       { title: 'Rxjs Fruits', url: 'https://www.rxjs-fruits.com', img: 'imgs/app-icons/rxjs.png', category: 'Web Tools' },
       { title: 'JSON To TS', url: 'https://transform.tools/json-to-typescript', img: 'imgs/app-icons/json-to-ts.png', category: 'Web Tools' },
+      { title: 'save the video', url: 'https://www.savethevideo.com/home', img: 'imgs/app-icons/save-the-video.webp', category: 'Web Tools' },
+      { title: 'y2matego', url: 'https://www.y2matego.com/en201', img: 'imgs/app-icons/y2mategoicon.svg', category: 'Web Tools' },
+      { title: 'video facebook', url: 'https://fdownloader.net/en', img: 'imgs/app-icons/ffacebook.webp', category: 'Web Tools' },
+      { title: 'ddownr', url: 'https://ddownr.com/enZA/', img: 'imgs/app-icons/ddownr_512x512.png', category: 'Web Tools' },
+      { title: 'Twitter Video', url: 'https://twittervideodownloader.com/en/', img: 'imgs/app-icons/twittervideodownloader.png', category: 'Web Tools' },
+      { title: 'clipscutter', url: 'https://www.clipscutter.com/', img: 'imgs/app-icons/clipscutter.ico', category: 'Web Tools' },
 
       // Game Engines
       { title: 'Godot', url: 'https://godotengine.org/', img: 'imgs/app-icons/logo_dark.png', category: 'Game Engine' },
