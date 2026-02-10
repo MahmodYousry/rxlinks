@@ -66,6 +66,12 @@
     "category": "AI"
   },
   {
+    "title": "Skywork",
+    "url": "https://skywork.ai/",
+    "img": "imgs/app-icons/skywork.ai.png",
+    "category": "AI"
+  },
+  {
     "title": "Search",
     "url": "https://google.com/",
     "img": "imgs/app-icons/google.png",
@@ -490,5 +496,17 @@
     "url": "https://Watch.ug",
     "img": "imgs/app-icons/41b30ae11f6d5cdeee5d790b95d005c5855d661957f058b5fc101f56736afeed_200.webp",
     "category": "Others"
+  },
+  {
+    "title": "LeetCode",
+    "url": "https://leetcode.com/",
+    "img": "imgs/app-icons/LeetCode_logo_black.png",
+    "category": "Learning"
+  },
+  {
+    "title": "Amazon Egypt",
+    "url": "https://www.amazon.eg/",
+    "img": "imgs/app-icons/amazon.png",
+    "category": "Shopping"
   }
 ]
