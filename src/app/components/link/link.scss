@@ -11,6 +11,7 @@
 }
 
 .link-card-circle {
+  position: relative;
   width: 120px;
   height: 120px;
   overflow: hidden;
@@ -23,6 +24,29 @@
     box-shadow 0.25s ease;
 
   animation: link-card-enter 0.35s ease-out both;
+
+  // Shine overlay (sweeps on hover)
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background: linear-gradient(
+      105deg,
+      transparent 0%,
+      transparent 40%,
+      rgba(255, 255, 255, 0.4) 50%,
+      transparent 60%,
+      transparent 100%
+    );
+    transform: translateX(-100%) skewX(-12deg);
+    transition: transform 0.6s ease;
+  }
+
+  &:hover::before {
+    transform: translateX(100%) skewX(-12deg);
+  }
 
   &:hover {
     transform: scale(1.06) translateY(-4px);
@@ -63,6 +87,10 @@
   .link-card-circle {
     animation: none;
     transition: none;
+
+    &::before {
+      display: none;
+    }
 
     &:hover {
       transform: none;
