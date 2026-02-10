@@ -73,25 +73,16 @@
           "builder": "@angular/build:extract-i18n"
         },
         "test": {
-          "builder": "@angular/build:karma",
+          "builder": "@angular/build:unit-test",
           "options": {
-            "polyfills": ["zone.js", "zone.js/testing"],
-            "tsConfig": "tsconfig.spec.json",
-            "inlineStyleLanguage": "scss",
-            "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
-            ],
-            "styles": [
-              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "./node_modules/primeicons/primeicons.css",
-              "src/styles.scss"
-            ]
+            "buildTarget": "rxlinks:build:development",
+            "tsConfig": "tsconfig.spec.json"
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

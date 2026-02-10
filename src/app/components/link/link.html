@@ -2,7 +2,9 @@
   class="link-card-circle d-flex flex-column align-items-center justify-content-center"
   [href]="url()"
   [target]="target()"
+  rel="noopener noreferrer"
+  [attr.aria-label]="'Link to ' + title()"
 >
-  <img [src]="icon()" />
+  <img [src]="icon()" [alt]="title()" />
   <h4>{{ title() }}</h4>
 </a>

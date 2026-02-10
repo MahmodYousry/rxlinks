@@ -1,59 +1,51 @@
 # Rxlinks
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.2.
+A personal link hub built with Angular: browse links by category (AI, Popular, Social, Games, Tools, etc.), search, and switch between light and dark theme. Links are loaded from a JSON file for easy editing.
 
 ## Development server
 
-To start a local development server, run:
+Run:
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
+Open [http://localhost:4200/](http://localhost:4200/). The app reloads when you change source files.
 
 ## Building
-
-To build the project run:
 
 ```bash
 ng build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Output goes to `dist/`. Use `ng build --configuration development` for a dev build.
 
 ## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
 
 ```bash
 ng test
 ```
 
-## Running end-to-end tests
+Uses Karma; run with `--no-watch --browsers=ChromeHeadless` for a single headless run.
 
-For end-to-end (e2e) testing, run:
+## Editing links
 
-```bash
-ng e2e
-```
+Links are stored in **`public/links.json`**. Each entry has:
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+- `title` – label shown in the app  
+- `url` – link URL  
+- `img` – path to the icon (e.g. `imgs/app-icons/example.png`)  
+- `category` – category name (e.g. `AI`, `Popular`, `Tools`)
 
-## Additional Resources
+Add, remove, or change entries in that file; no code changes needed. Restart or refresh the app to see updates.
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## Tech stack
+
+- Angular 20  
+- PrimeNG, Bootstrap  
+- Standalone components, lazy-loaded routes  
+
+## Resources
+
+- [Angular CLI](https://angular.dev/tools/cli)  
+- [Angular Update Guide](https://angular.dev/update-guide)
