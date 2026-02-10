@@ -15,7 +15,12 @@ How the Rxlinks page works when you open it in the browser.
    - Example: type “AI” to see only AI links; type “google” to find Google-related links.  
    - If nothing matches, you’ll see “No results found.”
 
-3. **Categories and link cards**  
+3. **Recently used (under search)**  
+   - Shows the last **8 links** you clicked (most recent first).  
+   - Stored in the browser (localStorage), so it persists across visits.  
+   - The section only appears after you’ve clicked at least one link.
+
+4. **Categories and link cards**  
    - Links are grouped by category (e.g. AI, Popular, Social, Tools).  
    - Each **card** shows an icon and the link name.  
    - **Click a card** to open that site in a **new tab**.

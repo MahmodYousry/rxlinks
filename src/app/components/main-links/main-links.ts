@@ -3,7 +3,7 @@ import { Link } from "../link/link";
 import { ILinks, ThemeMode } from '../../models';
 import { Search } from '../search/search';
 import { ToggleButtonModule } from 'primeng/togglebutton';
-import { LinksService } from '../../Shared';
+import { LinksService, RecentLinksService } from '../../Shared';
 import { FormsModule } from '@angular/forms';
 
 const THEME_STORAGE_KEY = 'rxlinks-theme';
@@ -25,19 +25,29 @@ export class MainLinks implements OnInit {
 
   noResults = signal(false);
 
+  recentLinks = signal<ILinks[]>([]);
+
   constructor(
     @Inject(DOCUMENT) private document: Document,
-    private linksService: LinksService
+    private linksService: LinksService,
+    private recentLinksService: RecentLinksService
   ) { }
 
   ngOnInit() {
     // Initialize theme from storage or system preference
     this.initializeTheme();
+    // Load recent links from storage
+    this.recentLinks.set(this.recentLinksService.getRecentLinks());
     // Load links from JSON
     this.linksService.getLinks().subscribe(links => {
       this.originalLinks.set(links);
       this.links.set(links);
     });
+  }
+
+  onLinkUsed(link: ILinks): void {
+    this.recentLinksService.addRecentLink(link);
+    this.recentLinks.set(this.recentLinksService.getRecentLinks());
   }
 
   private initializeTheme(): void {
