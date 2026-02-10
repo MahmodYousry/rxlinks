@@ -72,6 +72,12 @@
     "category": "AI"
   },
   {
+    "title": "Stitch",
+    "url": "https://stitch.withgoogle.com/",
+    "img": "imgs/app-icons/google-logo.jpg",
+    "category": "AI"
+  },
+  {
     "title": "Search",
     "url": "https://google.com/",
     "img": "imgs/app-icons/google.png",
@@ -180,6 +186,12 @@
     "category": "Games"
   },
   {
+    "title": "EmuOS",
+    "url": "https://emupedia.net/beta/emuos/",
+    "img": "imgs/app-icons/emupedia-logo-256.png",
+    "category": "Games"
+  },
+  {
     "title": "Soap2day",
     "url": "https://ww25.soap2day.day",
     "img": "imgs/app-icons/soap2day-icon.png",
@@ -264,6 +276,18 @@
     "category": "Pirate"
   },
   {
+    "title": "VRP Torrents",
+    "url": "https://torrents.vrpirates.wiki/",
+    "img": "imgs/app-icons/utorrent-icon-11230.png",
+    "category": "Pirate"
+  },
+  {
+    "title": "qBittorrent",
+    "url": "https://www.qbittorrent.org/",
+    "img": "imgs/app-icons/Qbittorrent_logo.png",
+    "category": "Pirate"
+  },
+  {
     "title": "Photopea",
     "url": "https://www.photopea.com/",
     "img": "imgs/app-icons/Photopea_logo.svg.png",
@@ -297,6 +321,18 @@
     "title": "Iloveimg",
     "url": "https://www.iloveimg.com/",
     "img": "imgs/app-icons/iloveimg-logo-png_seeklogo-619235.png",
+    "category": "Tools"
+  },
+  {
+    "title": "CloudConvert",
+    "url": "https://cloudconvert.com/png-to-webp",
+    "img": "imgs/app-icons/cloudconvert.png",
+    "category": "Tools"
+  },
+  {
+    "title": "Wheel Luck",
+    "url": "https://wheelofnames.com",
+    "img": "imgs/app-icons/open-graph-image.png",
     "category": "Tools"
   },
   {
@@ -417,6 +453,12 @@
     "title": "flexboxfroggy",
     "url": "https://flexboxfroggy.com/",
     "img": "imgs/app-icons/flexboxfroggy.png",
+    "category": "Learning"
+  },
+  {
+    "title": "Roadmap.sh",
+    "url": "https://roadmap.sh/",
+    "img": "imgs/app-icons/roadmap.sh.png",
     "category": "Learning"
   },
   {
