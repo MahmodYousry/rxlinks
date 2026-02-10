@@ -3,6 +3,7 @@ import { Link } from "../link/link";
 import { ILinks, ThemeMode } from '../../models';
 import { Search } from '../search/search';
 import { ToggleButtonModule } from 'primeng/togglebutton';
+import { ButtonModule } from 'primeng/button';
 import { LinksService, RecentLinksService } from '../../Shared';
 import { FormsModule } from '@angular/forms';
 
@@ -10,7 +11,7 @@ const THEME_STORAGE_KEY = 'rxlinks-theme';
 
 @Component({
   selector: 'app-main-links',
-  imports: [Link, Search, ToggleButtonModule, FormsModule],
+  imports: [Link, Search, ToggleButtonModule, ButtonModule, FormsModule],
   templateUrl: './main-links.html',
   styleUrl: './main-links.scss'
 })
@@ -96,6 +97,11 @@ export class MainLinks implements OnInit {
     this.checked.set(event.checked);
     this.applyBodyClass(mode);
     this.document.defaultView?.localStorage?.setItem(THEME_STORAGE_KEY, mode);
+  }
+
+  onClearRecent(): void {
+    this.recentLinksService.clearRecentLinks();
+    this.recentLinks.set([]);
   }
 
 

@@ -32,4 +32,9 @@ export class RecentLinksService {
     const updated = [link, ...filtered].slice(0, MAX_RECENT);
     window.localStorage.setItem(RECENT_STORAGE_KEY, JSON.stringify(updated));
   }
+
+  clearRecentLinks(): void {
+    if (typeof window === 'undefined' || !window.localStorage) return;
+    window.localStorage.removeItem(RECENT_STORAGE_KEY);
+  }
 }

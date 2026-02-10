@@ -9,7 +9,7 @@
   height: 50px;
 
   :focus {
-    box-shadow: 0px 5px 5px 0 #ccc;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
   }
 
   input {
@@ -22,5 +22,32 @@
     font-size: 16px;
     color: #333;
     outline: none;
+
+    &::placeholder {
+      color: #666;
+    }
+  }
+}
+
+// Dark mode: search field matches app dark theme
+:host-context(body.dark) ::ng-deep .p-iconfield {
+  background: #2d3238;
+  border-color: #495057;
+
+  :focus-within {
+    border-color: #6c757d;
+    box-shadow: 0 0 0 2px rgba(108, 117, 125, 0.25);
+  }
+
+  input {
+    color: #e9ecef;
+
+    &::placeholder {
+      color: #868e96;
+    }
+  }
+
+  .p-inputicon {
+    color: #adb5bd;
   }
 }
