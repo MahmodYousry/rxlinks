@@ -80,6 +80,33 @@
   &:hover img {
     transform: scale(1.05);
   }
+
+  // Health-check dot (green = up, red = down)
+  .link-status-dot {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #22c55e;
+    z-index: 2;
+    pointer-events: none;
+    flex-shrink: 0;
+  }
+
+  .link-status-dot--down {
+    background: #ef4444;
+  }
+}
+
+// Dark theme: slightly adjust dot visibility
+:host-context(body.dark) .link-card-circle .link-status-dot {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2);
+}
+
+:host-context(body.dark) .link-card-circle .link-status-dot--down {
+  background: #dc2626;
 }
 
 // Respect reduced motion preference

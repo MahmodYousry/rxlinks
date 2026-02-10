@@ -78,6 +78,30 @@
     "category": "AI"
   },
   {
+    "title": "Copy.ai",
+    "url": "https://www.copy.ai",
+    "img": "imgs/app-icons/copyai.png",
+    "category": "AI"
+  },
+  {
+    "title": "Hugging Face",
+    "url": "https://huggingface.co",
+    "img": "imgs/app-icons/huggingface.png",
+    "category": "AI"
+  },
+  {
+    "title": "Poe",
+    "url": "https://poe.com",
+    "img": "imgs/app-icons/poe.png",
+    "category": "AI"
+  },
+  {
+    "title": "Phind",
+    "url": "https://www.phind.com",
+    "img": "imgs/app-icons/phind.png",
+    "category": "AI"
+  },
+  {
     "title": "Search",
     "url": "https://google.com/",
     "img": "imgs/app-icons/google.png",
@@ -141,6 +165,54 @@
     "title": "X",
     "url": "https://x.com/",
     "img": "imgs/app-icons/x.jpg",
+    "category": "Popular"
+  },
+  {
+    "title": "DuckDuckGo",
+    "url": "https://duckduckgo.com",
+    "img": "imgs/app-icons/duckduckgo.png",
+    "category": "Popular"
+  },
+  {
+    "title": "Bing",
+    "url": "https://www.bing.com",
+    "img": "imgs/app-icons/bing.png",
+    "category": "Popular"
+  },
+  {
+    "title": "Ecosia",
+    "url": "https://www.ecosia.org",
+    "img": "imgs/app-icons/ecosia.png",
+    "category": "Popular"
+  },
+  {
+    "title": "Notion",
+    "url": "https://www.notion.so",
+    "img": "imgs/app-icons/notion.png",
+    "category": "Popular"
+  },
+  {
+    "title": "Dropbox",
+    "url": "https://www.dropbox.com",
+    "img": "imgs/app-icons/dropbox.png",
+    "category": "Popular"
+  },
+  {
+    "title": "OneDrive",
+    "url": "https://onedrive.live.com",
+    "img": "imgs/app-icons/onedrive.png",
+    "category": "Popular"
+  },
+  {
+    "title": "Wikipedia",
+    "url": "https://www.wikipedia.org",
+    "img": "imgs/app-icons/wikipedia.png",
+    "category": "Popular"
+  },
+  {
+    "title": "Hacker News",
+    "url": "https://news.ycombinator.com",
+    "img": "imgs/app-icons/hackernews.png",
     "category": "Popular"
   },
   {
@@ -294,9 +366,27 @@
     "category": "Images & Photos"
   },
   {
+    "title": "Lorem Picsum",
+    "url": "https://picsum.photos",
+    "img": "imgs/app-icons/picsum.png",
+    "category": "Images & Photos"
+  },
+  {
     "title": "Image Resizer",
     "url": "https://imageresizer.com/",
     "img": "imgs/app-icons/image-resizer.png",
+    "category": "Tools"
+  },
+  {
+    "title": "Todoist",
+    "url": "https://todoist.com",
+    "img": "imgs/app-icons/todoist.png",
+    "category": "Tools"
+  },
+  {
+    "title": "Trello",
+    "url": "https://trello.com",
+    "img": "imgs/app-icons/trello.png",
     "category": "Tools"
   },
   {
@@ -339,6 +429,54 @@
     "title": "Removebg",
     "url": "https://www.remove.bg/",
     "img": "imgs/app-icons/Remove.bg_icon_2019.svg.png",
+    "category": "Tools"
+  },
+  {
+    "title": "Grammarly",
+    "url": "https://www.grammarly.com",
+    "img": "imgs/app-icons/grammarly.png",
+    "category": "Tools"
+  },
+  {
+    "title": "Hemingway Editor",
+    "url": "https://hemingwayapp.com",
+    "img": "imgs/app-icons/hemingway.png",
+    "category": "Tools"
+  },
+  {
+    "title": "Bitly",
+    "url": "https://bitly.com",
+    "img": "imgs/app-icons/bitly.png",
+    "category": "Tools"
+  },
+  {
+    "title": "Pastebin",
+    "url": "https://pastebin.com",
+    "img": "imgs/app-icons/pastebin.png",
+    "category": "Tools"
+  },
+  {
+    "title": "Lorem Ipsum",
+    "url": "https://www.lipsum.com",
+    "img": "imgs/app-icons/lipsum.png",
+    "category": "Tools"
+  },
+  {
+    "title": "Squoosh",
+    "url": "https://squoosh.app",
+    "img": "imgs/app-icons/squoosh.png",
+    "category": "Tools"
+  },
+  {
+    "title": "TinyPNG",
+    "url": "https://tinypng.com",
+    "img": "imgs/app-icons/tinypng.png",
+    "category": "Tools"
+  },
+  {
+    "title": "Wolfram Alpha",
+    "url": "https://www.wolframalpha.com",
+    "img": "imgs/app-icons/wolframalpha.png",
     "category": "Tools"
   },
   {
@@ -393,6 +531,24 @@
     "title": "Font awesome",
     "url": "https://fontawesome.com/icons",
     "img": "imgs/app-icons/font-awesome-logo-png_seeklogo-336114.png",
+    "category": "Web Technologies"
+  },
+  {
+    "title": "GitLab",
+    "url": "https://gitlab.com",
+    "img": "imgs/app-icons/gitlab.png",
+    "category": "Web Technologies"
+  },
+  {
+    "title": "npm",
+    "url": "https://www.npmjs.com",
+    "img": "imgs/app-icons/npm.png",
+    "category": "Web Technologies"
+  },
+  {
+    "title": "Can I use",
+    "url": "https://caniuse.com",
+    "img": "imgs/app-icons/caniuse.png",
     "category": "Web Technologies"
   },
   {
@@ -462,9 +618,69 @@
     "category": "Learning"
   },
   {
+    "title": "Stack Overflow",
+    "url": "https://stackoverflow.com",
+    "img": "imgs/app-icons/stackoverflow.png",
+    "category": "Learning"
+  },
+  {
+    "title": "MDN",
+    "url": "https://developer.mozilla.org",
+    "img": "imgs/app-icons/mdn.png",
+    "category": "Learning"
+  },
+  {
+    "title": "Replit",
+    "url": "https://replit.com",
+    "img": "imgs/app-icons/replit.png",
+    "category": "Learning"
+  },
+  {
+    "title": "W3Schools",
+    "url": "https://www.w3schools.com",
+    "img": "imgs/app-icons/w3schools.png",
+    "category": "Learning"
+  },
+  {
+    "title": "freeCodeCamp",
+    "url": "https://www.freecodecamp.org",
+    "img": "imgs/app-icons/freecodecamp.png",
+    "category": "Learning"
+  },
+  {
+    "title": "Frontend Mentor",
+    "url": "https://www.frontendmentor.io",
+    "img": "imgs/app-icons/frontendmentor.png",
+    "category": "Learning"
+  },
+  {
+    "title": "Medium",
+    "url": "https://medium.com",
+    "img": "imgs/app-icons/medium.png",
+    "category": "Learning"
+  },
+  {
+    "title": "Substack",
+    "url": "https://substack.com",
+    "img": "imgs/app-icons/substack.png",
+    "category": "Learning"
+  },
+  {
     "title": "Rxjs Fruits",
     "url": "https://www.rxjs-fruits.com",
     "img": "imgs/app-icons/rxjs.png",
+    "category": "Web Tools"
+  },
+  {
+    "title": "CodePen",
+    "url": "https://codepen.io",
+    "img": "imgs/app-icons/codepen.png",
+    "category": "Web Tools"
+  },
+  {
+    "title": "JSFiddle",
+    "url": "https://jsfiddle.net",
+    "img": "imgs/app-icons/jsfiddle.png",
     "category": "Web Tools"
   },
   {
@@ -507,6 +723,36 @@
     "title": "clipscutter",
     "url": "https://www.clipscutter.com/",
     "img": "imgs/app-icons/clipscutter.ico",
+    "category": "Web Tools"
+  },
+  {
+    "title": "JSON Formatter",
+    "url": "https://jsonformatter.org",
+    "img": "imgs/app-icons/jsonformatter.png",
+    "category": "Web Tools"
+  },
+  {
+    "title": "Regex101",
+    "url": "https://regex101.com",
+    "img": "imgs/app-icons/regex101.png",
+    "category": "Web Tools"
+  },
+  {
+    "title": "Carbon",
+    "url": "https://carbon.now.sh",
+    "img": "imgs/app-icons/carbon.png",
+    "category": "Web Tools"
+  },
+  {
+    "title": "Favicon.io",
+    "url": "https://favicon.io",
+    "img": "imgs/app-icons/faviconio.png",
+    "category": "Web Tools"
+  },
+  {
+    "title": "Real Favicon Generator",
+    "url": "https://realfavicongenerator.net",
+    "img": "imgs/app-icons/realfavicongenerator.png",
     "category": "Web Tools"
   },
   {

@@ -20,6 +20,20 @@
       ariaLabel="Clear recently used links"
     />
     }
+    <p-button
+      icon="pi pi-chevron-down"
+      label="Expand all"
+      severity="secondary"
+      (onClick)="expandAll()"
+      ariaLabel="Expand all categories"
+    />
+    <p-button
+      icon="pi pi-chevron-up"
+      label="Collapse all"
+      severity="secondary"
+      (onClick)="collapseAll()"
+      ariaLabel="Collapse all categories"
+    />
   </div>
   <app-search (searchValue)="onSearchValueChange($event)"></app-search>
 
@@ -48,9 +62,23 @@
   </div>
   } @else {
   @for (char of categories; track char) {
-  <div class="container mb-4">
-    <h3 class="category-header">{{ char }}</h3>
+  <div class="container mb-4 category-block">
+    <button
+      type="button"
+      class="category-header category-header-btn"
+      (click)="toggleCategory(char)"
+      [attr.aria-expanded]="!isCategoryCollapsed(char)"
+      [attr.aria-controls]="'category-' + char"
+      [id]="'header-' + char"
+    >
+      <span class="category-header-chevron pi" [class.pi-chevron-down]="!isCategoryCollapsed(char)" [class.pi-chevron-right]="isCategoryCollapsed(char)" aria-hidden="true"></span>
+      <span>{{ char }}</span>
+    </button>
+    @if (!isCategoryCollapsed(char)) {
     <div
+      [id]="'category-' + char"
+      role="region"
+      [attr.aria-labelledby]="'header-' + char"
       class="d-flex justify-content-md-start justify-content-between align-items-center flex-wrap gap-3"
     >
       @for (link of links(); track link.url + link.title) { @if (link.category === char) {
@@ -63,6 +91,7 @@
       ></app-link>
       } }
     </div>
+    }
   </div>
   }
   }

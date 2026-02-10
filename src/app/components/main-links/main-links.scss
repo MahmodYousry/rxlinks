@@ -1,3 +1,37 @@
+// Collapsible category header
+.category-block {
+  .category-header-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0;
+    margin: 0 0 0.75rem 0;
+    border: none;
+    background: transparent;
+    font-size: 1.25rem;
+    font-weight: 600;
+    cursor: pointer;
+    color: inherit;
+    text-align: left;
+    line-height: 1.2;
+
+    &:hover {
+      opacity: 0.85;
+    }
+
+    &:focus-visible {
+      outline: 2px solid var(--p-focus-ring-color, #0d6efd);
+      outline-offset: 2px;
+    }
+  }
+
+  .category-header-chevron {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    transition: transform 0.2s ease;
+  }
+}
+
 // Clear recent button: light mode
 :host ::ng-deep .clear-recent-btn.p-button {
   background: #6c757d;

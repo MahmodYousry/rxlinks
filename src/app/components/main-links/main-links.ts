@@ -28,6 +28,9 @@ export class MainLinks implements OnInit {
 
   recentLinks = signal<ILinks[]>([]);
 
+  /** Category names that are currently collapsed (content hidden). */
+  collapsedCategories = signal<Set<string>>(new Set());
+
   constructor(
     @Inject(DOCUMENT) private document: Document,
     private linksService: LinksService,
@@ -81,9 +84,11 @@ export class MainLinks implements OnInit {
       return this.links.set(this.originalLinks());
     }
 
+    const key = searchKey.toLowerCase();
     const filteredLinks = this.originalLinks().filter(link =>
-      link.title.toLowerCase().includes(searchKey.toLowerCase()) ||
-      link.category.toLowerCase().includes(searchKey.toLowerCase())
+      link.title.toLowerCase().includes(key) ||
+      link.category.toLowerCase().includes(key) ||
+      link.url.toLowerCase().includes(key)
     );
 
     this.links.set(filteredLinks);
@@ -104,5 +109,25 @@ export class MainLinks implements OnInit {
     this.recentLinks.set([]);
   }
 
+  isCategoryCollapsed(category: string): boolean {
+    return this.collapsedCategories().has(category);
+  }
 
+  toggleCategory(category: string): void {
+    const next = new Set(this.collapsedCategories());
+    if (next.has(category)) {
+      next.delete(category);
+    } else {
+      next.add(category);
+    }
+    this.collapsedCategories.set(next);
+  }
+
+  expandAll(): void {
+    this.collapsedCategories.set(new Set());
+  }
+
+  collapseAll(): void {
+    this.collapsedCategories.set(new Set(this.categories));
+  }
 }

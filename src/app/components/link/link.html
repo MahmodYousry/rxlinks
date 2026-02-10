@@ -6,6 +6,12 @@
   [attr.aria-label]="'Link to ' + title()"
   (click)="onLinkClick()"
 >
+  <span
+    class="link-status-dot"
+    [class.link-status-dot--down]="status() === 'down'"
+    [attr.aria-label]="status() === 'down' ? 'Link may be unavailable' : 'Link available'"
+    title="{{ status() === 'down' ? 'Link may be down or unreachable' : 'Link is reachable' }}"
+  ></span>
   <img [src]="icon()" [alt]="title()" />
   <h4>{{ title() }}</h4>
 </a>
