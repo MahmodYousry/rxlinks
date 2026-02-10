@@ -1,5 +1,4 @@
-import { Component, input } from '@angular/core';
-import { Button } from 'primeng/button';
+import { Component, input, output } from '@angular/core';
 
 @Component({
   selector: 'app-link',
@@ -14,4 +13,10 @@ export class Link {
   target = input<string>('_blank');
   icon = input<string>('');
 
+  /** Emits when the user clicks the link (before navigation). */
+  linkClick = output<void>();
+
+  onLinkClick(): void {
+    this.linkClick.emit();
+  }
 }

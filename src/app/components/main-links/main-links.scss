@@ -1,0 +1,33 @@
+// Clear recent button: light mode
+:host ::ng-deep .clear-recent-btn.p-button {
+  background: #6c757d;
+  border-color: #6c757d;
+  color: #fff;
+
+  &:hover:not(:disabled) {
+    background: #5a6268;
+    border-color: #545b62;
+    color: #fff;
+  }
+
+  &:focus-visible {
+    box-shadow: 0 0 0 2px rgba(108, 117, 125, 0.4);
+  }
+}
+
+// Clear recent button: dark mode
+:host-context(body.dark) ::ng-deep .clear-recent-btn.p-button {
+  background: #495057;
+  border-color: #6c757d;
+  color: #e9ecef;
+
+  &:hover:not(:disabled) {
+    background: #5a6268;
+    border-color: #868e96;
+    color: #fff;
+  }
+
+  &:focus-visible {
+    box-shadow: 0 0 0 2px rgba(108, 117, 125, 0.5);
+  }
+}

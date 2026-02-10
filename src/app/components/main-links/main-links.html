@@ -1,34 +1,69 @@
 <div class="content white-content py-3">
-  <div class="container mb-4">
+  <div class="container mb-4 d-flex align-items-center gap-2 flex-wrap">
     <p-togglebutton
-      value="checked()"
+      [ngModel]="checked()"
+      (onChange)="onThemeToggle($event)"
       onLabel="Dark"
       offLabel="Light"
-      class="w-24"
-      (onChange)="toggleMode()"
       onIcon="pi pi-moon"
       offIcon="pi pi-sun"
-      onLabel="Dark"
-      offLabel="Light"
+      class="w-24"
+      ariaLabel="Toggle dark mode"
     />
+    @if (recentLinks().length > 0) {
+    <p-button
+      icon="pi pi-trash"
+      label="Clear recent"
+      severity="secondary"
+      styleClass="clear-recent-btn"
+      (onClick)="onClearRecent()"
+      ariaLabel="Clear recently used links"
+    />
+    }
   </div>
   <app-search (searchValue)="onSearchValueChange($event)"></app-search>
 
-  @for (char of categories; track $index) {
+  @if (recentLinks().length > 0) {
   <div class="container mb-4">
-    <h3 class="category-header">{{ char }}</h3>
+    <h3 class="category-header">Recently used</h3>
     <div
       class="d-flex justify-content-md-start justify-content-between align-items-center flex-wrap gap-3"
     >
-      @for (link of links(); track $index) { @if (link.category === char) {
+      @for (link of recentLinks(); track link.url + link.title) {
       <app-link
         [title]="link.title"
         [url]="link.url"
         [icon]="link.img"
         target="_blank"
+        (linkClick)="onLinkUsed(link)"
+      ></app-link>
+      }
+    </div>
+  </div>
+  }
+
+  @if (noResults()) {
+  <div class="container mb-4">
+    <p class="text-muted mb-0">No results found.</p>
+  </div>
+  } @else {
+  @for (char of categories; track char) {
+  <div class="container mb-4">
+    <h3 class="category-header">{{ char }}</h3>
+    <div
+      class="d-flex justify-content-md-start justify-content-between align-items-center flex-wrap gap-3"
+    >
+      @for (link of links(); track link.url + link.title) { @if (link.category === char) {
+      <app-link
+        [title]="link.title"
+        [url]="link.url"
+        [icon]="link.img"
+        target="_blank"
+        (linkClick)="onLinkUsed(link)"
       ></app-link>
       } }
     </div>
   </div>
+  }
   }
 </div>

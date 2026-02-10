@@ -14,7 +14,7 @@ export class Search {
   searchKey = signal<string>('');
   searchValue = output<string>();
 
-  onSeachChange(event: Event) {
+  onSearchChange(event: Event) {
     const searchValue = (event.target as HTMLInputElement).value;
     this.searchKey.set(searchValue);
     this.searchValue.emit(searchValue);
