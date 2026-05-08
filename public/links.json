@@ -796,5 +796,11 @@
     "url": "https://www.amazon.eg/",
     "img": "imgs/app-icons/amazon.png",
     "category": "Shopping"
+  },
+  {
+    "title": "Kimi",
+    "url": "https://www.kimi.com/agent",
+    "img": "imgs/app-icons/kimi-icon-rounded-corner.png",
+    "category": "AI"
   }
 ]
